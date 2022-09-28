@@ -1,0 +1,38 @@
+[
+    {
+        "id" : "1",
+        "name" : "Dumble",
+        "img" : "https://manofmany.com/wp-content/uploads/2020/07/Best-Dumbbell-Exercises-For-Men.jpg",
+        "time" : 30
+    },
+    {
+        "id" : "2",
+        "name" : "Treadmill",
+        "img" : "https://www.byrdie.com/thmb/YEMCzZXZOn0Etioo_qCT7HzGt-4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():gifv():format(webp)/GettyImages-1310445390-f95189af1e54451db4117b34392a291f.jpg",
+        "time" : 30
+    },
+    {
+        "id" : "3",
+        "name" : "Stationary Bicycle",
+        "img" : "https://rukminim1.flixcart.com/image/300/300/xif0q/exercise-bike/7/g/o/cruiser-spin-exercise-bike-for-home-fitness-perfect-equipment-original-imaghv8tgtg5zmy5.jpeg?q=90",
+        "time" : 30
+    },
+    {
+        "id" : "4",
+        "name" : "Fitness Ball",
+        "img" : "https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2017/12/Stability-Ball-Exercises-715x358.jpg",
+        "time" : 30
+    }
+    {
+        "id" : "5",
+        "name" : "Rowing Machine",
+        "img" : "https://m.media-amazon.com/images/I/716moIRbnpL._AC_SL1500_.jpg",
+        "time" : 30
+    },
+    {
+        "id" : "6",
+        "name" : "Barbell Set",
+        "img" : "https://www.tunturi.org/website/Accessoires/14TUSCL381_1.jpg",
+        "time" : 30
+    }
+]
