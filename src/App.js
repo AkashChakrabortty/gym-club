@@ -13,13 +13,13 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="row">
-      <div className="left-div col-9 border border-primary">
+      <div className="left-div col-12 col-md-9 border border-primary">
           <Logo></Logo>
           <h3>Select today's exercise</h3>
           <Items></Items>
        </div>
 
-       <div className="right-div col-3 border border-primary">
+       <div className="right-div col-12 col-md-3 border border-primary">
          <Owner></Owner>
          <Break></Break>
          <Details></Details>

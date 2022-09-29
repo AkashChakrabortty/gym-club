@@ -12,7 +12,7 @@ const Items = () => {
         ,[items])
     return (
     <div className="container-fluid">
-        <div className="row row-cols-3">
+        <div className="row g-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
         {
             items.map( item => <Item item={item} key={item.id}></Item>)
          }

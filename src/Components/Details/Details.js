@@ -15,7 +15,7 @@ const Details = () => {
                     Exercise time
                     </div>
                     <div className="value text-muted">
-                        12seconds
+                        12s
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@ const Details = () => {
                     Break time
                     </div>
                     <div className="value text-muted">
-                        {}seconds
+                        {}s
                     </div>
                 </div>
 
