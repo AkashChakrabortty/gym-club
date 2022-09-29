@@ -9,7 +9,7 @@ const Items = () => {
             .then(res => res.json())
             .then( data => setItems(data))
         }
-        ,[])
+        ,[items])
     return (
     <div className="container-fluid">
         <div className="row row-cols-3">

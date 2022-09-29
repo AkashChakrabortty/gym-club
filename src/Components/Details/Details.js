@@ -19,7 +19,7 @@ const Details = () => {
                     Break time
                     </div>
                     <div className="value text-muted">
-                        12seconds
+                        {}seconds
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import Details from './Components/Details/Details';
 import Items from './Components/Items/Items';
 import Logo from './Components/Logo/Logo';
 import Owner from './Components/Owner/Owner';
+import Questions from './Components/Questions/Questions';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
          <Break></Break>
          <Details></Details>
        </div>
+      </div>
+
+      <div className="questions">
+        <Questions></Questions>
       </div>
     </div>
   );
