@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Break from './Components/Break/Break';
 import Details from './Components/Details/Details';
@@ -6,7 +7,9 @@ import Logo from './Components/Logo/Logo';
 import Owner from './Components/Owner/Owner';
 import Questions from './Components/Questions/Questions';
 
+
 function App() {
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -26,6 +29,7 @@ function App() {
       <div className="questions">
         <Questions></Questions>
       </div>
+
     </div>
   );
 }
