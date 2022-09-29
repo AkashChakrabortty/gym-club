@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Break from './Components/Break/Break';
 import Details from './Components/Details/Details';
@@ -10,10 +10,32 @@ import Questions from './Components/Questions/Questions';
 
 function App() {
   const [total,setTotal] = useState([]);
-
+  const [breakLocal,setLocal] = useState([]);
   const totalTime = (props)=>{
     setTotal(props);
    }
+
+   const [breakValue,setValue] = useState([]);
+
+   const breakFunction = (props)=>{
+    localStorage.setItem('break',   JSON.stringify(props));
+    setValue(props);
+   }
+   const getBreakTime = ()=> {
+    let breakCart = {};
+    const storedCart = localStorage.getItem('break');
+       if(storedCart){
+      breakCart = JSON.parse(storedCart);
+       }
+       return breakCart; 
+   }
+
+   useEffect( ()=>{
+    const storedCart = getBreakTime();
+    setLocal(storedCart);
+   } , [])
+
+
 
     return (
     <div className="container-fluid">
@@ -26,8 +48,8 @@ function App() {
 
        <div className="right-div col-12 col-md-3">
          <Owner></Owner>
-         <Break></Break>
-         <Details total={total}></Details>
+         <Break breakFunction={breakFunction}></Break>
+         <Details total={total} breakLocal={breakLocal} breakValue={breakValue}></Details>
        </div>
       </div>
 

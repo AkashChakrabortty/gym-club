@@ -4,9 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Details.css';
 
 const Details = (props) => {
-    const {total} = props;
+    const {total ,breakLocal, breakValue} = props;
     const notify = () => toast("congratulation you are done with your activity!");
-
+    const stringBreak = localStorage.getItem('break');
+    const parseBreak = JSON.parse(stringBreak);
     return (
         <div>
             <div className="container mt-3">
@@ -16,7 +17,10 @@ const Details = (props) => {
                     Exercise time
                     </div>
                     <div className="value text-muted">
-                        {total}s
+                        {
+                           `${ total > 0 ? total  : 0 }s` 
+                        }
+                      
                     </div>
                 </div>
 
@@ -25,7 +29,13 @@ const Details = (props) => {
                     Break time
                     </div>
                     <div className="value text-muted">
-                        {}s
+
+                        {
+                          
+
+                          `${ stringBreak !== null ? parseBreak : 0 }s` 
+                        }
+                      
                     </div>
                 </div>
 
