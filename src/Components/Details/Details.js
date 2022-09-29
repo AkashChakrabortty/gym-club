@@ -3,7 +3,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Details.css';
 
-const Details = () => {
+const Details = (props) => {
+    const {total} = props;
     const notify = () => toast("congratulation you are done with your activity!");
 
     return (
@@ -15,7 +16,7 @@ const Details = () => {
                     Exercise time
                     </div>
                     <div className="value text-muted">
-                        12s
+                        {total}s
                     </div>
                 </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Break from './Components/Break/Break';
 import Details from './Components/Details/Details';
@@ -9,20 +9,25 @@ import Questions from './Components/Questions/Questions';
 
 
 function App() {
+  const [total,setTotal] = useState([]);
 
-  return (
+  const totalTime = (props)=>{
+    setTotal(props);
+   }
+
+    return (
     <div className="container-fluid">
       <div className="row">
-      <div className="left-div col-12 col-md-9 border border-primary">
+      <div className="left-div col-12 col-md-9">
           <Logo></Logo>
           <h3>Select today's exercise</h3>
-          <Items></Items>
+          <Items totalTime={totalTime}></Items>
        </div>
 
-       <div className="right-div col-12 col-md-3 border border-primary">
+       <div className="right-div col-12 col-md-3">
          <Owner></Owner>
          <Break></Break>
-         <Details></Details>
+         <Details total={total}></Details>
        </div>
       </div>
 
